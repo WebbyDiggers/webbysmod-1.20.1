@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "webbysmod",
+	"version": "${version}",
+	"name": "WebbysMod",
+	"description": "This Webby's Mod",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.webbywebbysmod.WebbysMod"
+		],
+		"client": [
+			"net.webbywebbysmod.WebbysModClient"
+		],
+		"fabric-datagen": [
+			"net.webbywebbysmod.WebbysModDataGenerator"
+		]
+	},
+	"mixins": [
+		"webbysmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
